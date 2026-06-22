@@ -24,8 +24,8 @@
 
 **`ZENTRUM FÜR DIGITALE FORSCHUNG`**
 
-*An independent research / reading group bridging statistical learning theory*  
-*and hardware-aware implementation of large language models.*
+_An independent research / reading group bridging statistical learning theory_  
+_and hardware-aware implementation of large language models._
 
 ---
 
@@ -51,16 +51,19 @@ We do not treat neural networks, and AI in general, as black boxes. We treat the
 ## § 2 &nbsp;&nbsp; Research Charter
 
 **TENET 1:** No wrapper library where a raw tensor operation can be written.
+
 **TENET 2:** No graph break shall pass unexamined into the compilation layer.
+
 **TENET 3:** No claim without a derivation. No derivation without an implementation.
+
 **TENET 4:** No pivot table shall be reformatted on institute time.
 
 ---
 
 ## § 3 &nbsp;&nbsp; Active Repositories
 
-| Repository | Description | Status |
-|:---|:---|:---:|
+| Repository                                                           | Description                                                                                                                                |  Status  |
+| :------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------- | :------: |
 | [`rg-transformers`](https://github.com/zdf-research/rg-transformers) | Cohort I — 12-week reading & build programme. nanoGPT from first principles, member implementations, weekly presentations, and leaderboard | `active` |
 
 ---
@@ -100,6 +103,6 @@ And the broader open-source community without whom none of this would be reprodu
 
 `ZDF RESEARCH` &nbsp;·&nbsp; `EST. 2026` &nbsp;·&nbsp; `UNCLASSIFIED`
 
-*"Someone has to build the thing that makes the dashboards obsolete."*
+_"Someone has to build the thing that makes the dashboards obsolete."_
 
 </div>
