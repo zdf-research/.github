@@ -11,20 +11,20 @@
 <div align="center">
 
 ```
-╔════════════════════════════════════════════════╗
-║                                                ║
-║   ▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓   ║
-║   ░░                                      ░░   ║
-║   ▓▓        Z D F   R E S E A R C H       ▓▓   ║
-║   ░░                                      ░░   ║
-║   ▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓   ║
-║                                                ║
-╚════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════╗
+║                                                 ║
+║    ▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓   ║
+║    ░░                                      ░░   ║
+║    ▓▓        Z D F   R E S E A R C H       ▓▓   ║
+║    ░░                                      ░░   ║
+║    ▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓░░▓▓   ║
+║                                                 ║
+╚═════════════════════════════════════════════════╝
 ```
 
 **`ZENTRUM FÜR DIGITALE FORSCHUNG`**
 
-*An independent research collective bridging statistical learning theory*  
+*An independent research / reading group bridging statistical learning theory*  
 *and hardware-aware implementation of large language models.*
 
 ---
@@ -42,9 +42,9 @@
 
 ZDF Research exists to close a specific gap. Modern machine learning practice has bifurcated into two populations: those who call APIs, and those who understand what the APIs are doing. The distance between these two populations is measured not in years of experience but in willingness to read the paper, derive the equation, and write the kernel.
 
-Our operational mandate is the progressive construction of hardware-aware autoregressive language models from mathematical first principles — every component understood, every design decision traced to a source, every implementation profiled against the metal.
+Our operational mandate is the progressive construction of cutting-edge knowledge constructed from mathematical first principles. Every component needs to be understood, every design decision traced to a source, every implementation profiled against the metal.
 
-We do not treat neural networks as black boxes. We treat them as highly structured physical systems, bounded by memory bandwidth, register pressure, and numerical precision, and we build accordingly.
+We do not treat neural networks, and AI in general, as black boxes. We treat them as highly structured physical systems, bounded by memory bandwidth, register pressure, and numerical precision, and we build accordingly.
 
 ---
 
@@ -61,76 +61,34 @@ We do not treat neural networks as black boxes. We treat them as highly structur
 
 | Repository | Description | Status |
 |:---|:---|:---:|
-| [`curriculum`](https://github.com/zdf-research/curriculum) | 12-week reading & build programme. nanoGPT from first principles. | `active` |
-| [`implementations`](https://github.com/zdf-research/curriculum/tree/main/implementations) | Per-member model implementations, profiled against a fixed leaderboard | `active` |
-| [`presentations`](https://github.com/zdf-research/curriculum/tree/main/presentations) | Weekly seminar slides and derivation notes | `active` |
-| [`meta`](https://github.com/zdf-research/meta) | Group governance, RFC proposals, sprint planning | `active` |
+| [`rg-transformers`](https://github.com/zdf-research/rg-transformers) | Cohort I — 12-week reading & build programme. nanoGPT from first principles, member implementations, weekly presentations, and leaderboard | `active` |
 
 ---
 
-## § 4 &nbsp;&nbsp; Curriculum Overview
+## § 4 &nbsp;&nbsp; Compute Infrastructure
 
-The first cohort follows a structured 12-week programme divided into two phases.
+ZDF Research operates on a dedicated H100 GPU cluster. Cluster access is governed by the principle that **scale is used when scale teaches something new** — not as a substitute for understanding.
 
-**Phase I — Build It** `weeks 01–06`
-
-> Foundations of vector semantics, gradient flow, scaled dot-product attention, multi-head attention, gated feed-forward sublayers, and positional encodings. Output: a working autoregressive transformer trained on natural language.
-
-**Phase II — Understand & Optimise It** `weeks 07–12`
-
-> Rotary position embeddings, grouped-query attention, KV cache engineering, FlashAttention I/II, kernel compilation via `torch.compile` and FlexAttention, mixed-precision training, and formal evaluation methodology.
-
-Full syllabus, weekly references, and code milestones: [`curriculum/README.md`](https://github.com/zdf-research/curriculum)
+Members additionally maintain access to personal cloud GPU instances (Lambda Labs, Vast.ai) for exploratory work and rapid iteration outside group sessions.
 
 ---
 
-## § 5 &nbsp;&nbsp; Leaderboard
+## § 5 &nbsp;&nbsp; Membership & Contribution
 
-Validation cross-entropy on a fixed held-out split of WikiText-103, evaluated via `common/eval.py` under a shared BPE tokeniser. Updated after each weekly session.
+ZDF Research is closed and invitation-based. Membership is extended to data scientists and researchers who demonstrate rigour and a functional sense of irony about the state of enterprise data work.
 
-> Current standings: [`LEADERBOARD.md`](https://github.com/zdf-research/curriculum/blob/main/LEADERBOARD.md)
-
----
-
-## § 6 &nbsp;&nbsp; Compute Infrastructure
-
-ZDF Research operates on dedicated compute clusters on Azure Machine Learning. Cluster access is governed by the principle that **scale is used when scale teaches something new** — not as a substitute for understanding.
-
-Members may additionally maintain access to personal cloud GPU instances (Lambda Labs, Vast.ai) for exploratory work and rapid iteration outside group sessions.
+External contributions to open repositories are welcome via pull request. Please read [`CONTRIBUTING.md`](https://github.com/zdf-research/rg-transformers/blob/main/CONTRIBUTING.md) before submitting. Pay particular attention to the section on the eval script.
 
 ---
 
-## § 7 &nbsp;&nbsp; Membership & Contribution
+## § 6 &nbsp;&nbsp; Research Lineage & Affiliation
 
-ZDF Research is closed and invitation-based. Membership is extended to data scientists who demonstrate both rigour and a functional sense of irony about the state of enterprise data work.
-
----
-
-## § 8 &nbsp;&nbsp; Research Lineage & Affiliation
-
-ZDF Research draws its methodological tradition from the independent research model — small, focused, technically "uncompromising". We acknowledge with respect the intellectual lineage of:
+ZDF Research draws its methodological tradition from the independent research model: small, focused, technical. We acknowledge with respect the intellectual lineage of:
 
 `Vaswani et al., 2017` &nbsp;·&nbsp; `Ba et al., 2016` &nbsp;·&nbsp; `Su et al., 2021` &nbsp;·&nbsp; `Dao et al., 2022–2024`  
 `Ainslie et al., 2023` &nbsp;·&nbsp; `Shazeer, 2020` &nbsp;·&nbsp; `Karpathy, 2022–2024`
 
 And the broader open-source community without whom none of this would be reproducible.
-
----
-
-## § 9 &nbsp;&nbsp; The Ψ Monogram
-
-<div align="center">
-
-```
-         The Ψ operator acts on the space of engineering time.
-         It maps: {corporate overhead} ——→ {tractable research problems}.
-
-         Eigenvalue: approximately one well-understood transformer block per week.
-```
-
-*The mesh passes signal. It cancels noise. This has always been the design.*
-
-</div>
 
 ---
 
