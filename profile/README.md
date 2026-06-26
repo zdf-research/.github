@@ -64,7 +64,7 @@ We do not treat neural networks, and AI in general, as black boxes. We treat the
 
 | Repository                                                           | Description                                                                                                                                |  Status  |
 | :------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------- | :------: |
-| [`rg-transformers`](https://github.com/zdf-research/rg-transformers) | Cohort I — 12-week reading & build programme. nanoGPT from first principles, member implementations, weekly presentations, and leaderboard | `active` |
+| [`rg-transformers`](https://github.com/zdf-research/rg-transformers) | Cohort I — 12-week reading & build programme. nanoGPT from first principles, per-week winners merged into a group project, and leaderboard | `active` |
 
 ---
 
@@ -78,7 +78,7 @@ Members additionally maintain access to personal cloud GPU instances (Lambda Lab
 
 ## § 5 &nbsp;&nbsp; Membership & Contribution
 
-ZDF Research is closed and invitation-based. Membership is extended to data scientists and researchers who demonstrate rigour and a functional sense of irony about the state of enterprise data work.
+ZDF Research is invitation-based. Membership is extended to data scientists and researchers who demonstrate rigour and curiosity — a willingness to read the paper, derive the equation, and write the kernel.
 
 External contributions to open repositories are welcome via pull request. Please read [`CONTRIBUTING.md`](https://github.com/zdf-research/rg-transformers/blob/main/CONTRIBUTING.md) before submitting. Pay particular attention to the section on the eval script.
 
